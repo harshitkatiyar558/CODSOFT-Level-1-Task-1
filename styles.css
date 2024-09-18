@@ -1,0 +1,286 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: #f4f7fc;
+    color: #333;
+    padding: 40px;
+}
+
+h1, h2, h3, h4 {
+    color: #222;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.resume-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: white;
+    padding: 40px 30px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Contact Info */
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-info h3 {
+    font-size: 22px;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.contact-info a {
+    font-weight: bold;
+}
+
+/* Skills Section */
+.skills {
+    margin: 20px 0;
+}
+
+.skills h3 {
+    font-size: 22px;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-box span {
+    background: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.skill-box span:hover {
+    background: #2980b9;
+}
+
+/* Education */
+.education {
+    margin: 20px 0;
+}
+
+.education-item {
+    margin-bottom: 15px;
+}
+
+.education-item h4 {
+    font-size: 20px;
+    color: #2980b9;
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    font-size: 16px;
+}
+
+/* Projects */
+.projects {
+    margin: 20px 0;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-item h4 {
+    font-size: 20px;
+    color: #2980b9;
+}
+
+.project-item p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.project-item a {
+    font-weight: bold;
+    background: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-item a:hover {
+    background: #2980b9;
+}
+
+/* Certifications */
+.certifications {
+    margin: 20px 0;
+}
+
+.certifications h3 {
+    font-size: 22px;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.certifications ul {
+    list-style: none;
+}
+
+.certifications li {
+    font-size: 16px;
+}
+
+.certifications a {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: #f4f7fc;
+    border-radius: 0 0 15px 15px;
+    font-size: 14px;
+}
+
+/* Media Queries: Responsive Design */
+@media (max-width: 768px) {
+    /* Resize fonts and adjust spacing for smaller screens */
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .contact-info, .skills, .education, .projects, .certifications {
+        margin: 15px 0;
+    }
+
+    .contact-info h3, .skills h3, .education h3, .projects h3, .certifications h3 {
+        font-size: 20px;
+    }
+
+    .skill-box {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .skill-box span {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .project-item h4, .education-item h4 {
+        font-size: 18px;
+    }
+
+    .project-item p, .education-item p, .certifications li {
+        font-size: 14px;
+    }
+
+    .project-item a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    /* Reduce padding inside the container */
+    .resume-container {
+        padding: 20px;
+    }
+}
+
+/* Media Query for very small screens (mobile phones) */
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    .resume-container {
+        padding: 15px;
+    }
+
+    .contact-info li, .skill-box span, .project-item p, .education-item p {
+        font-size: 12px;
+    }
+
+    .project-item a {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
